@@ -16,7 +16,7 @@ int add(int a, int b) {
     return a + b;
 }
 ...
-auto randomized_add = randomize(1);
+auto randomized_add = randomize(add,3);
 int a = randomized_add(4); // will be equal to random value + 4
 int b = randomized_add(3); // will be equal to random value + 3
 ```
