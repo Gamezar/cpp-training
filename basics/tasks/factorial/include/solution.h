@@ -1,5 +1,12 @@
 #pragma once
 
 int factorial(int number) {
-    return -1; // Replace this with your solution
+    int ans = 1;
+    if (number < 0) {
+        return -1;
+    }
+    for (int i = 1; i <= number; i++) {
+        ans *= i;
+    }
+    return ans; // Replace this with your solution
 }
